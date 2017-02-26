@@ -1,0 +1,24 @@
+{
+  "name": "resin-homebridge",
+  "version": "0.1.0",
+  "description": "Resin.io application for Homebridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "homebridge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glavin001/resin-homebridge.git"
+  },
+  "keywords": [
+    "resin",
+    "homebridge"
+  ],
+  "author": "Glavin Wiechert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glavin001/resin-homebridge/issues"
+  },
+  "homepage": "https://github.com/Glavin001/resin-homebridge#readme"
+}
