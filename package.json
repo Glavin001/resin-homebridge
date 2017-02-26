@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "DEBUG=* homebridge -D"
+    "start": "npm run start:install && npm run start:homebridge",
+    "start:install": "echo \"$NPM_INSTALL\" | xargs npm install",
+    "start:homebridge": "DEBUG=* homebridge --debug --user-storage-path /usr/src/app/.homebridge"
   },
   "repository": {
     "type": "git",

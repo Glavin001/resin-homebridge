@@ -10,6 +10,8 @@ RUN apt-get install -y \
     curl wget git python build-essential \
     make g++ libavahi-compat-libdnssd-dev \
     libkrb5-dev vim net-tools
+RUN apt-get install avahi-daemon avahi-discover \
+    libnss-mdns libavahi-compat-libdnssd-dev
 
 # Install homebridge
 RUN npm install --global --production homebridge --unsafe-perm

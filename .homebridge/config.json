@@ -1,0 +1,24 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    "description": "Homebridge running on Resin.io",
+    "accessories": [
+        {
+            "accessory": "SamsungCastTV",
+            "name": "TV",
+            "samsung": {
+              "ip": "192.168.1.22"
+            },
+            "chromecast": {
+                "ip": "192.168.1.12"
+            },
+            "send_delay": 400
+        }
+    ],
+    "platforms": [
+    ]
+}
