@@ -1,6 +1,6 @@
 {
     "bridge": {
-        "name": "Homebridge",
+        "name": "Homebridge - Raspberry Pi 1",
         "username": "CC:22:3D:E3:CE:30",
         "port": 51826,
         "pin": "031-45-154"
@@ -15,8 +15,28 @@
             },
             "chromecast": {
                 "ip": "192.168.1.12"
-            },
-            "send_delay": 400
+            }
+        },
+        {
+            "accessory": "PeoplePlus",
+            "name": "Glavin's iPhone",
+            "device": {
+                "mac": "cc:29:f5:3b:a2:f2"
+            }
+        },
+        {
+            "accessory": "PeoplePlus",
+            "name": "Celina's iPhone",
+            "device": {
+                "mac": "00:56:cd:69:54:34"
+            }
+        },
+        {
+            "accessory": "PeoplePlus",
+            "name": "GlavinBook-Pro Wi-Fi",
+            "device": {
+                "mac": "14:10:9f:cf:d2:5b"
+            }
         }
     ],
     "platforms": [
