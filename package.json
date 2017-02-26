@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "DEBUG=* homebridge --debug --user-storage-path /usr/src/app/.homebridge --plugin-path /usr/src/app/node_modules/"
+    "start": "DEBUG=* homebridge --debug --user-storage-path /usr/src/app/.homebridge --plugin-path /usr/src/app/node_modules/",
+    "debug": "DEBUG=* homebridge --debug --plugin-path ./node_modules/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/Glavin001/resin-homebridge#readme",
   "dependencies": {
     "homebridge-people-plus": "^0.1.0",
-    "homebridge-samsung-cast-tv": "^0.1.1"
+    "homebridge-samsung-cast-tv": "^0.1.1",
+    "homebridge-server": "^1.0.24"
   }
 }

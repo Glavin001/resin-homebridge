@@ -40,5 +40,12 @@
         }
     ],
     "platforms": [
+        {
+            "platform": "Server",
+            "port"    : 80,
+            "name"    : "Homebridge Server",
+            "log"     : "/data/server.log",
+            "restart" : "echo 'Not going to restart'"
+        }
     ]
 }
