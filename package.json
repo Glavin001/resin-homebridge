@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start:install && npm run start:homebridge",
-    "start:install": "echo \"$NPM_INSTALL\" | xargs npm install",
-    "start:homebridge": "DEBUG=* homebridge --debug --user-storage-path /usr/src/app/.homebridge"
+    "start": "DEBUG=* homebridge --debug --user-storage-path /usr/src/app/.homebridge --plugin-path /usr/src/app/node_modules/"
   },
   "repository": {
     "type": "git",
@@ -22,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Glavin001/resin-homebridge/issues"
   },
-  "homepage": "https://github.com/Glavin001/resin-homebridge#readme"
+  "homepage": "https://github.com/Glavin001/resin-homebridge#readme",
+  "dependencies": {
+    "homebridge-samsung-cast-tv": "^0.1.0"
+  }
 }
