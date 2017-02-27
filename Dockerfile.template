@@ -1,5 +1,5 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node:latest
-MAINTAINER Glavin Wiecher <glavin.wiechert@gmail.com>
+MAINTAINER Glavin Wiechert <glavin.wiechert@gmail.com>
 
 # Install more dependencies
 RUN apt-get update
@@ -25,6 +25,7 @@ RUN JOBS=MAX npm install --production --unsafe-perm && \
 
 # This will copy all files in our root to the working directory in the container
 COPY . ./
+RUN chmod +x setup.sh
 
 # Enable systemd init system in container
 ENV INITSYSTEM on

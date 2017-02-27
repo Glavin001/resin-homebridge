@@ -11,10 +11,10 @@
             "accessory": "SamsungCastTV",
             "name": "TV",
             "samsung": {
-              "ip": "192.168.1.22"
+              "ip": "192.168.1.19"
             },
             "chromecast": {
-                "ip": "192.168.1.12"
+                "ip": "192.168.1.11"
             }
         },
         {

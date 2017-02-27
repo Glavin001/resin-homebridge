@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start:copy && npm run start:homebridge",
-    "start:copy": "mkdir -p /data/.homebridge/ && cp .homebridge/* /data/.homebridge/",
+    "start": "npm run start:setup && npm run start:homebridge",
+    "start:setup": "./setup.sh",
     "start:homebridge": "DEBUG=* homebridge --debug --user-storage-path /data/.homebridge --plugin-path /usr/src/app/node_modules/",
     "debug": "DEBUG=* homebridge --debug --plugin-path ./node_modules/"
   },
