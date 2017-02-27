@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/Glavin001/resin-homebridge#readme",
   "dependencies": {
-    "homebridge-people-plus": "^0.1.0",
+    "homebridge-people-plus": "^0.1.1",
     "homebridge-samsung-cast-tv": "^0.1.1",
     "homebridge-server": "^1.0.24"
   }
