@@ -1,20 +1,19 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node:latest
 MAINTAINER Glavin Wiecher <glavin.wiechert@gmail.com>
 
-# Defines our working directory in container
-WORKDIR /usr/src/app
-
 # Install more dependencies
 RUN apt-get update
 RUN apt-get install -y \
     curl wget git python build-essential \
     make g++ libavahi-compat-libdnssd-dev \
-    libkrb5-dev vim net-tools
-RUN apt-get install -y \
-    avahi-daemon avahi-discover libnss-mdns
+    libkrb5-dev vim net-tools libnss-mdns \
+    avahi-daemon avahi-discover
 
 # Install homebridge
 RUN npm install --global --production homebridge --unsafe-perm
+
+# Defines our working directory in container
+WORKDIR /usr/src/app
 
 # Copies the package.json first for better cache on later pushes
 COPY package.json package.json
